@@ -1,0 +1,12 @@
+.relatedSection {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border-color);
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+  text-align: center;
+}

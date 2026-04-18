@@ -1,0 +1,88 @@
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.carouselTrack {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 16px 4px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.carouselTrack::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.carouselItem {
+  flex: 0 0 calc(20% - 16px); /* 5 items max on desktop */
+  min-width: 200px;
+  scroll-snap-align: start;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  color: var(--text-primary);
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: all 0.2s;
+}
+
+.navBtn:hover {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.prevBtn {
+  left: -20px;
+}
+
+.nextBtn {
+  right: -20px;
+}
+
+@media (max-width: 1200px) {
+  .carouselItem {
+    flex: 0 0 calc(25% - 15px); /* 4 items */
+  }
+}
+
+@media (max-width: 992px) {
+  .carouselItem {
+    flex: 0 0 calc(33.333% - 14px); /* 3 items */
+  }
+  .prevBtn { left: -10px; }
+  .nextBtn { right: -10px; }
+}
+
+@media (max-width: 768px) {
+  .carouselItem {
+    flex: 0 0 calc(50% - 10px); /* 2 items */
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselItem {
+    flex: 0 0 calc(100% - 10px); /* 1 item */
+  }
+}

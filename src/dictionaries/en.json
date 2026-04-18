@@ -1,0 +1,47 @@
+{
+  "header": {
+    "home": "Home",
+    "products": "Products",
+    "contact": "Contact",
+    "searchPlaceholder": "Search by name, brand, line..."
+  },
+  "home": {
+    "title": "Elevate Your Passion",
+    "highlight": "Premium Models",
+    "subtitle": "David Hobby brings you the most unique and highest quality model kits and figures. Discover now.",
+    "viewAll": "View All Products",
+    "featured": "Featured Products",
+    "viewAllLink": "View all"
+  },
+  "products": {
+    "title": "All Products",
+    "subtitle": "Explore our premium model collection."
+  },
+  "productDetail": {
+    "home": "Home",
+    "products": "Products",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "description": "Product Description",
+    "buyShopee": "Buy on Shopee",
+    "contactFanpage": "Message Fanpage",
+    "brand": "Brand",
+    "series": "Series",
+    "line": "Line",
+    "scale": "Scale",
+    "type": "Type",
+    "features": "Key Features"
+  },
+  "footer": {
+    "desc": "Specializing in premium model kits and static figures. Ensuring the best quality and prices.",
+    "links": "Links",
+    "shopee": "Shopee Store",
+    "facebook": "Facebook Fanpage",
+    "contact": "Contact"
+  },
+  "search": {
+    "title": "Search results for",
+    "noResult": "No products found.",
+    "back": "Go back"
+  }
+}

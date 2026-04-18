@@ -1,0 +1,756 @@
+[
+  {
+    "id": "p-gundam-rx782",
+    "name": "Mô Hình Gundam RX-78-2 (MG 1/100)",
+    "name_en": "Gundam RX-78-2 Model Kit (MG 1/100)",
+    "price": "1,250,000đ",
+    "description": "Mô hình lắp ráp Gundam chính hãng Bandai. Tỷ lệ 1/100 Master Grade với chi tiết sắc nét, khung xương linh hoạt.",
+    "description_en": "Authentic Bandai Gundam model kit. 1/100 Master Grade scale with sharp details and flexible inner frame.",
+    "category": "Gundam",
+    "brand": "Bandai",
+    "series": "Gundam",
+    "line": "MG (Master Grade)",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/100",
+    "features": [
+      "Độ chi tiết cao",
+      "Khung xương linh hoạt",
+      "Có decal nước"
+    ],
+    "image": "https://images.unsplash.com/photo-1610992383188-75f284988775?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1610992383188-75f284988775?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "p-ironman-mk85",
+    "name": "Mô Hình Iron Man Mark 85 (1/6 Scale)",
+    "name_en": "Iron Man Mark 85 Figure (1/6 Scale)",
+    "price": "5,500,000đ",
+    "description": "Mô hình Iron Man Mark 85 tỉ lệ 1/6 cực đỉnh. Trang bị đèn LED ở mắt, lò phản ứng hồ quang và lòng bàn tay.",
+    "description_en": "Incredible 1/6 scale Iron Man Mark 85 figure. Equipped with LED lights in eyes, arc reactor, and palms.",
+    "category": "Marvel",
+    "brand": "Hot Toys",
+    "series": "Avengers: Endgame",
+    "line": "Diecast Series",
+    "type": "Figure tĩnh",
+    "scale": "1/6",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Phụ kiện đa dạng"
+    ],
+    "image": "https://images.unsplash.com/photo-1608889175250-c3b0c1667d3a?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1608889175250-c3b0c1667d3a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m1",
+    "name": "Mô Hình Marvel Phiên Bản 1 (Hot Toys)",
+    "name_en": "Marvel Figure Version 1 (Hot Toys)",
+    "price": "1300,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Marvel. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Marvel universe. Exquisite design, true colors, suitable for display.",
+    "category": "Marvel",
+    "brand": "Hot Toys",
+    "series": "Marvel Series",
+    "line": "Premium Line 1",
+    "type": "Figure tĩnh",
+    "scale": "1/6",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1608889175250-c3b0c1667d3a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": false,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m2",
+    "name": "Mô Hình Anime Phiên Bản 2 (Banpresto)",
+    "name_en": "Anime Figure Version 2 (Banpresto)",
+    "price": "900,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Anime. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Anime universe. Exquisite design, true colors, suitable for display.",
+    "category": "Anime",
+    "brand": "Banpresto",
+    "series": "Anime Series",
+    "line": "Premium Line 2",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/144",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1610992383188-75f284988775?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1610992383188-75f284988775?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m3",
+    "name": "Mô Hình Transformers Phiên Bản 3 (Takara Tomy)",
+    "name_en": "Transformers Figure Version 3 (Takara Tomy)",
+    "price": "700,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Transformers. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Transformers universe. Exquisite design, true colors, suitable for display.",
+    "category": "Transformers",
+    "brand": "Takara Tomy",
+    "series": "Transformers Series",
+    "line": "Premium Line 3",
+    "type": "Figure tĩnh",
+    "scale": "1/100",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": false,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m4",
+    "name": "Mô Hình Dragon Ball Phiên Bản 4 (Megahouse)",
+    "name_en": "Dragon Ball Figure Version 4 (Megahouse)",
+    "price": "2300,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Dragon Ball. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Dragon Ball universe. Exquisite design, true colors, suitable for display.",
+    "category": "Dragon Ball",
+    "brand": "Megahouse",
+    "series": "Dragon Ball Series",
+    "line": "Premium Line 4",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/144",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1608889175250-c3b0c1667d3a?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1608889175250-c3b0c1667d3a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1610992383188-75f284988775?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m5",
+    "name": "Mô Hình Pokemon Phiên Bản 5 (Good Smile)",
+    "name_en": "Pokemon Figure Version 5 (Good Smile)",
+    "price": "1100,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Pokemon. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Pokemon universe. Exquisite design, true colors, suitable for display.",
+    "category": "Pokemon",
+    "brand": "Good Smile",
+    "series": "Pokemon Series",
+    "line": "Premium Line 5",
+    "type": "Figure tĩnh",
+    "scale": "1/6",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m6",
+    "name": "Mô Hình DC Phiên Bản 6 (Bandai)",
+    "name_en": "DC Figure Version 6 (Bandai)",
+    "price": "1600,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ DC. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the DC universe. Exquisite design, true colors, suitable for display.",
+    "category": "DC",
+    "brand": "Bandai",
+    "series": "DC Series",
+    "line": "Premium Line 6",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/100",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": false,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m7",
+    "name": "Mô Hình Gundam Phiên Bản 7 (Hot Toys)",
+    "name_en": "Gundam Figure Version 7 (Hot Toys)",
+    "price": "1300,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Gundam. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Gundam universe. Exquisite design, true colors, suitable for display.",
+    "category": "Gundam",
+    "brand": "Hot Toys",
+    "series": "Gundam Series",
+    "line": "Premium Line 7",
+    "type": "Figure tĩnh",
+    "scale": "1/6",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m8",
+    "name": "Mô Hình Marvel Phiên Bản 8 (Banpresto)",
+    "name_en": "Marvel Figure Version 8 (Banpresto)",
+    "price": "600,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Marvel. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Marvel universe. Exquisite design, true colors, suitable for display.",
+    "category": "Marvel",
+    "brand": "Banpresto",
+    "series": "Marvel Series",
+    "line": "Premium Line 8",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/144",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": false,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m9",
+    "name": "Mô Hình Anime Phiên Bản 9 (Takara Tomy)",
+    "name_en": "Anime Figure Version 9 (Takara Tomy)",
+    "price": "1100,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Anime. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Anime universe. Exquisite design, true colors, suitable for display.",
+    "category": "Anime",
+    "brand": "Takara Tomy",
+    "series": "Anime Series",
+    "line": "Premium Line 9",
+    "type": "Figure tĩnh",
+    "scale": "1/100",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1608889175250-c3b0c1667d3a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m10",
+    "name": "Mô Hình Transformers Phiên Bản 10 (Megahouse)",
+    "name_en": "Transformers Figure Version 10 (Megahouse)",
+    "price": "500,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Transformers. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Transformers universe. Exquisite design, true colors, suitable for display.",
+    "category": "Transformers",
+    "brand": "Megahouse",
+    "series": "Transformers Series",
+    "line": "Premium Line 10",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/144",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1610992383188-75f284988775?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m11",
+    "name": "Mô Hình Dragon Ball Phiên Bản 11 (Good Smile)",
+    "name_en": "Dragon Ball Figure Version 11 (Good Smile)",
+    "price": "1600,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Dragon Ball. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Dragon Ball universe. Exquisite design, true colors, suitable for display.",
+    "category": "Dragon Ball",
+    "brand": "Good Smile",
+    "series": "Dragon Ball Series",
+    "line": "Premium Line 11",
+    "type": "Figure tĩnh",
+    "scale": "1/6",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": false,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m12",
+    "name": "Mô Hình Pokemon Phiên Bản 12 (Bandai)",
+    "name_en": "Pokemon Figure Version 12 (Bandai)",
+    "price": "1800,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Pokemon. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Pokemon universe. Exquisite design, true colors, suitable for display.",
+    "category": "Pokemon",
+    "brand": "Bandai",
+    "series": "Pokemon Series",
+    "line": "Premium Line 12",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/100",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m13",
+    "name": "Mô Hình DC Phiên Bản 13 (Hot Toys)",
+    "name_en": "DC Figure Version 13 (Hot Toys)",
+    "price": "900,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ DC. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the DC universe. Exquisite design, true colors, suitable for display.",
+    "category": "DC",
+    "brand": "Hot Toys",
+    "series": "DC Series",
+    "line": "Premium Line 13",
+    "type": "Figure tĩnh",
+    "scale": "1/6",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": false,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m14",
+    "name": "Mô Hình Gundam Phiên Bản 14 (Banpresto)",
+    "name_en": "Gundam Figure Version 14 (Banpresto)",
+    "price": "1900,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Gundam. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Gundam universe. Exquisite design, true colors, suitable for display.",
+    "category": "Gundam",
+    "brand": "Banpresto",
+    "series": "Gundam Series",
+    "line": "Premium Line 14",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/144",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m15",
+    "name": "Mô Hình Marvel Phiên Bản 15 (Takara Tomy)",
+    "name_en": "Marvel Figure Version 15 (Takara Tomy)",
+    "price": "1100,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Marvel. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Marvel universe. Exquisite design, true colors, suitable for display.",
+    "category": "Marvel",
+    "brand": "Takara Tomy",
+    "series": "Marvel Series",
+    "line": "Premium Line 15",
+    "type": "Figure tĩnh",
+    "scale": "1/100",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": false,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m16",
+    "name": "Mô Hình Anime Phiên Bản 16 (Megahouse)",
+    "name_en": "Anime Figure Version 16 (Megahouse)",
+    "price": "900,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Anime. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Anime universe. Exquisite design, true colors, suitable for display.",
+    "category": "Anime",
+    "brand": "Megahouse",
+    "series": "Anime Series",
+    "line": "Premium Line 16",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/144",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1580477667995-156083561221?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m17",
+    "name": "Mô Hình Transformers Phiên Bản 17 (Good Smile)",
+    "name_en": "Transformers Figure Version 17 (Good Smile)",
+    "price": "1400,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Transformers. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Transformers universe. Exquisite design, true colors, suitable for display.",
+    "category": "Transformers",
+    "brand": "Good Smile",
+    "series": "Transformers Series",
+    "line": "Premium Line 17",
+    "type": "Figure tĩnh",
+    "scale": "1/6",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m18",
+    "name": "Mô Hình Dragon Ball Phiên Bản 18 (Bandai)",
+    "name_en": "Dragon Ball Figure Version 18 (Bandai)",
+    "price": "2200,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Dragon Ball. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Dragon Ball universe. Exquisite design, true colors, suitable for display.",
+    "category": "Dragon Ball",
+    "brand": "Bandai",
+    "series": "Dragon Ball Series",
+    "line": "Premium Line 18",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/100",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m19",
+    "name": "Mô Hình Pokemon Phiên Bản 19 (Hot Toys)",
+    "name_en": "Pokemon Figure Version 19 (Hot Toys)",
+    "price": "1300,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Pokemon. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Pokemon universe. Exquisite design, true colors, suitable for display.",
+    "category": "Pokemon",
+    "brand": "Hot Toys",
+    "series": "Pokemon Series",
+    "line": "Premium Line 19",
+    "type": "Figure tĩnh",
+    "scale": "1/6",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1608889175250-c3b0c1667d3a?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1608889175250-c3b0c1667d3a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1608889175250-c3b0c1667d3a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": false,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m20",
+    "name": "Mô Hình DC Phiên Bản 20 (Banpresto)",
+    "name_en": "DC Figure Version 20 (Banpresto)",
+    "price": "2300,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ DC. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the DC universe. Exquisite design, true colors, suitable for display.",
+    "category": "DC",
+    "brand": "Banpresto",
+    "series": "DC Series",
+    "line": "Premium Line 20",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/144",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m21",
+    "name": "Mô Hình Gundam Phiên Bản 21 (Takara Tomy)",
+    "name_en": "Gundam Figure Version 21 (Takara Tomy)",
+    "price": "500,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Gundam. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Gundam universe. Exquisite design, true colors, suitable for display.",
+    "category": "Gundam",
+    "brand": "Takara Tomy",
+    "series": "Gundam Series",
+    "line": "Premium Line 21",
+    "type": "Figure tĩnh",
+    "scale": "1/100",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1608889175250-c3b0c1667d3a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m22",
+    "name": "Mô Hình Marvel Phiên Bản 22 (Megahouse)",
+    "name_en": "Marvel Figure Version 22 (Megahouse)",
+    "price": "2100,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Marvel. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Marvel universe. Exquisite design, true colors, suitable for display.",
+    "category": "Marvel",
+    "brand": "Megahouse",
+    "series": "Marvel Series",
+    "line": "Premium Line 22",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/144",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m23",
+    "name": "Mô Hình Anime Phiên Bản 23 (Good Smile)",
+    "name_en": "Anime Figure Version 23 (Good Smile)",
+    "price": "1600,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Anime. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Anime universe. Exquisite design, true colors, suitable for display.",
+    "category": "Anime",
+    "brand": "Good Smile",
+    "series": "Anime Series",
+    "line": "Premium Line 23",
+    "type": "Figure tĩnh",
+    "scale": "1/6",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1610992383188-75f284988775?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1610992383188-75f284988775?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m24",
+    "name": "Mô Hình Transformers Phiên Bản 24 (Bandai)",
+    "name_en": "Transformers Figure Version 24 (Bandai)",
+    "price": "1500,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Transformers. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Transformers universe. Exquisite design, true colors, suitable for display.",
+    "category": "Transformers",
+    "brand": "Bandai",
+    "series": "Transformers Series",
+    "line": "Premium Line 24",
+    "type": "Lắp ráp (Model Kit)",
+    "scale": "1/100",
+    "features": [
+      "Có đèn LED",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1594833297298-502a5cf34f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1610992383188-75f284988775?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581557991964-125469da3b8a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": false,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  },
+  {
+    "id": "m25",
+    "name": "Mô Hình Dragon Ball Phiên Bản 25 (Hot Toys)",
+    "name_en": "Dragon Ball Figure Version 25 (Hot Toys)",
+    "price": "2400,000đ",
+    "description": "Mô hình cực chất lượng từ vũ trụ Dragon Ball. Thiết kế tinh xảo, màu sắc trung thực, phù hợp trưng bày.",
+    "description_en": "High quality figure from the Dragon Ball universe. Exquisite design, true colors, suitable for display.",
+    "category": "Dragon Ball",
+    "brand": "Hot Toys",
+    "series": "Dragon Ball Series",
+    "line": "Premium Line 25",
+    "type": "Figure tĩnh",
+    "scale": "1/6",
+    "features": [
+      "Màu sắc sống động",
+      "Khớp linh hoạt",
+      "Kèm phụ kiện"
+    ],
+    "image": "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1620311224213-9a3d4638706b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1610992383188-75f284988775?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80"
+    ],
+    "inStock": true,
+    "shopeeLink": "https://shopee.vn/search?keyword=davidhobby",
+    "fanpageLink": "https://facebook.com"
+  }
+]

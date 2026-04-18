@@ -1,0 +1,47 @@
+{
+  "header": {
+    "home": "Trang chủ",
+    "products": "Sản phẩm",
+    "contact": "Liên hệ",
+    "searchPlaceholder": "Tìm kiếm theo tên, thương hiệu, dòng..."
+  },
+  "home": {
+    "title": "Nâng Tầm Đam Mê",
+    "highlight": "Mô Hình Cao Cấp",
+    "subtitle": "David Hobby mang đến cho bạn những bộ sưu tập mô hình, đồ chơi độc đáo và chất lượng nhất. Khám phá ngay hôm nay.",
+    "viewAll": "Xem Tất Cả Sản Phẩm",
+    "featured": "Sản Phẩm Nổi Bật",
+    "viewAllLink": "Xem tất cả"
+  },
+  "products": {
+    "title": "Tất Cả Sản Phẩm",
+    "subtitle": "Khám phá bộ sưu tập mô hình đẳng cấp của chúng tôi."
+  },
+  "productDetail": {
+    "home": "Trang chủ",
+    "products": "Sản phẩm",
+    "inStock": "Còn hàng",
+    "outOfStock": "Hết hàng",
+    "description": "Mô tả sản phẩm",
+    "buyShopee": "Mua Ngay Trên Shopee",
+    "contactFanpage": "Nhắn Tin Fanpage",
+    "brand": "Thương hiệu",
+    "series": "Series",
+    "line": "Dòng",
+    "scale": "Tỷ lệ",
+    "type": "Loại hình",
+    "features": "Tính năng nổi bật"
+  },
+  "footer": {
+    "desc": "Chuyên cung cấp các sản phẩm mô hình lắp ráp, figures tĩnh cao cấp. Đảm bảo chất lượng và giá tốt nhất.",
+    "links": "Liên kết",
+    "shopee": "Gian hàng Shopee",
+    "facebook": "Fanpage Facebook",
+    "contact": "Liên hệ"
+  },
+  "search": {
+    "title": "Kết quả tìm kiếm cho",
+    "noResult": "Không tìm thấy sản phẩm nào phù hợp.",
+    "back": "Quay lại"
+  }
+}
