@@ -1,6 +1,32 @@
 .main {
-  padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.breadcrumb a {
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: var(--text-primary);
+}
+
+.separator {
+  color: var(--border-color);
+}
+
+.current {
+  color: var(--text-primary);
+  font-weight: 500;
 }
 
 .header {

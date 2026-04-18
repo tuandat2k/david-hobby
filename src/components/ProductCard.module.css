@@ -9,10 +9,17 @@
   box-shadow: var(--shadow-md);
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-glow);
-  border-color: var(--accent);
+/* Only apply hover effects on devices that support hover (desktops) */
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glow);
+    border-color: var(--accent);
+  }
+
+  .card:hover .image {
+    transform: scale(1.05);
+  }
 }
 
 .imageContainer {
@@ -26,10 +33,6 @@
 .image {
   object-fit: cover;
   transition: transform 0.5s ease;
-}
-
-.card:hover .image {
-  transform: scale(1.05);
 }
 
 .outOfStock {

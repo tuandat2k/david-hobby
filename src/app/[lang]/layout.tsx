@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Archivo_Black } from "next/font/google";
 import "../globals.css";
 import { Locale } from "../dictionaries";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -7,6 +7,12 @@ import ScrollToTop from "@/components/ScrollToTop";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin", "vietnamese"],
+});
+
+const archivoBlack = Archivo_Black({
+  variable: "--font-archivo",
+  weight: "400",
+  subsets: ["latin"],
 });
 
 export const viewport: Viewport = {
@@ -27,6 +33,22 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/site.webmanifest",
+  openGraph: {
+    title: "David Hobby - Mô hình & Đồ chơi cao cấp",
+    description: "Khám phá bộ sưu tập mô hình và đồ chơi sở thích đa dạng tại David Hobby.",
+    url: "https://davidhobby.com",
+    siteName: "David Hobby",
+    images: [
+      {
+        url: "/images/banner-temp.png", // Ảnh sẽ hiện ra khi bạn gửi link
+        width: 1200,
+        height: 630,
+        alt: "David Hobby Banner",
+      },
+    ],
+    locale: "vi_VN",
+    type: "website",
+  },
 };
 
 export async function generateStaticParams() {
@@ -42,7 +64,7 @@ export default async function RootLayout({
 }>) {
   const lang = (await params).lang as Locale;
   return (
-    <html lang={lang} className={inter.variable}>
+    <html lang={lang} className={`${inter.variable} ${archivoBlack.variable}`}>
       <body>
         {children}
         <ScrollToTop />

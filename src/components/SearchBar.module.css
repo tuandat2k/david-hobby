@@ -1,18 +1,14 @@
 .form {
   display: flex;
   align-items: center;
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 24px;
   padding: 4px 16px;
   width: 100%;
   max-width: 400px;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.form:focus-within {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.1);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .input {
@@ -20,7 +16,7 @@
   background: transparent;
   flex: 1;
   padding: 8px 0;
-  font-size: 1rem; /* Minimum 16px to prevent iOS auto-zoom */
+  font-size: 1rem;
   color: var(--text-primary);
   outline: none;
 }

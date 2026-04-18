@@ -83,16 +83,26 @@
 }
 
 @media (max-width: 768px) {
+  .carouselTrack {
+    gap: 12px;
+    padding: 16px 0; /* Remove horizontal padding to use full width */
+  }
   .carouselItem {
-    flex: 0 0 calc(50% - 10px); /* 2 items */
+    flex: 0 0 calc((100% - 12px) / 2);
+    min-width: unset; /* Remove min-width to allow calc to work */
   }
   .navBtn {
-    display: none; /* Hide buttons on small mobile, use touch scroll */
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
+  .carouselTrack {
+    gap: 10px;
+    padding: 16px 0;
+  }
   .carouselItem {
-    flex: 0 0 calc(50% - 10px); /* 2 items on mobile */
+    flex: 0 0 calc((100% - 10px) / 2);
+    min-width: unset;
   }
 }

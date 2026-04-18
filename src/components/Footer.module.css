@@ -13,11 +13,13 @@
 }
 
 .brand {
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.05em;
+  font-family: var(--font-archivo), sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: -0.06em;
   color: var(--text-primary);
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 .brand span {
@@ -36,6 +38,17 @@
   gap: 12px;
 }
 
+.contact p {
+  color: var(--text-secondary);
+}
+
+.hotlineLink {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
 .links h3, .contact h3 {
   font-size: 1.125rem;
   font-weight: 600;
@@ -43,13 +56,42 @@
   margin-bottom: 8px;
 }
 
-.links a, .contact p {
-  color: var(--text-secondary);
-  transition: color 0.2s;
+.socialIcons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
 }
 
-.links a:hover {
-  color: var(--accent);
+.iconLink {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+@media (hover: hover) {
+  .iconLink:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 16px rgba(220, 38, 38, 0.2);
+  }
+
+  .hotlineLink:hover {
+    color: var(--accent);
+  }
+}
+
+.socialImg {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .bottom {

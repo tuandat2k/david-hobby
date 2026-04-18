@@ -14,6 +14,8 @@ interface HeaderProps {
 
 export default function Header({ lang, dict }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const pathname = usePathname();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -33,15 +35,52 @@ export default function Header({ lang, dict }: HeaderProps) {
     }
   }, [isMenuOpen]);
 
+  // Handle scroll for header visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY < 50) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY) {
+        // Scroll down: Hide header
+        setIsVisible(false);
+      } else {
+        // Scroll up: Show header
+        setIsVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isVisible ? '' : styles.headerHidden}`}>
       <div className={`container ${styles.container}`}>
         <Link href={`/${lang}`} className={styles.logo}>
-          DAVID<span>HOBBY</span>
+          DAVID <span>HOBBY</span>
         </Link>
         
         <div className={styles.searchContainer}>
           <SearchBar placeholder={dict.header.searchPlaceholder} lang={lang} />
+        </div>
+
+        <div className={styles.langSwitchOuter}>
+          <Link 
+            href="/vi" 
+            className={lang === 'vi' ? styles.activeLang : ''}
+          >
+            VI
+          </Link>
+          <Link 
+            href="/en" 
+            className={lang === 'en' ? styles.activeLang : ''}
+          >
+            EN
+          </Link>
         </div>
 
         <button 
@@ -53,6 +92,12 @@ export default function Header({ lang, dict }: HeaderProps) {
           <span></span>
           <span></span>
         </button>
+
+        {/* Overlay for mobile menu */}
+        <div 
+          className={`${styles.overlay} ${isMenuOpen ? styles.overlayActive : ''}`}
+          onClick={closeMenu}
+        ></div>
 
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
           <Link href={`/${lang}`} className={styles.link} onClick={closeMenu}>

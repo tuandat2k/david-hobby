@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroSlider from "@/components/HeroSlider";
 import ProductCarousel from "@/components/ProductCarousel";
 import productsData from "@/data/products.json";
 import Link from "next/link";
@@ -16,29 +17,8 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
     <>
       <Header lang={lang} dict={dict} />
       <main>
-        {/* Hero Section */}
-        <section className={styles.hero}>
-          <div className={`container ${styles.heroContainer}`}>
-            <div className={`animate-fade-in ${styles.heroContent}`}>
-              <h1 className={styles.title}>
-                {dict.home.title} <br />
-                <span className={styles.highlight}>{dict.home.highlight}</span>
-              </h1>
-              <p className={styles.subtitle}>
-                {dict.home.subtitle}
-              </p>
-              <div className={styles.heroActions}>
-                <Link href={`/${lang}/products`} className="btn btn-primary">
-                  {dict.home.viewAll}
-                </Link>
-                <a href="#featured" className="btn btn-outline">
-                  {dict.home.featured}
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.heroOverlay}></div>
-        </section>
+        {/* Hero Slider */}
+        <HeroSlider lang={lang} dict={dict} />
 
         {/* Featured Products */}
         <section id="featured" className={styles.featured}>

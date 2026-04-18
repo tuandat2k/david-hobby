@@ -29,6 +29,12 @@ export default async function ProductsPage({
     <>
       <Header lang={lang} dict={dict} />
       <main className={`container ${styles.main}`}>
+        <div className={styles.breadcrumb}>
+          <Link href={`/${lang}`}>{dict.header.home}</Link>
+          <span className={styles.separator}>/</span>
+          <span className={styles.current}>{dict.header.products}</span>
+        </div>
+
         <div className={styles.header}>
           <h1 className={styles.title}>{dict.products.title}</h1>
           <p className={styles.subtitle}>{dict.products.subtitle}</p>

@@ -63,14 +63,32 @@ button {
 
 main {
   flex: 1;
+  padding-top: 77px; /* Matched to exact header height to prevent white gap */
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 123px; /* Matched to exact mobile header height */
+  }
 }
 
 /* Layout Utilities */
+section[id], footer[id] {
+  scroll-margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  section[id], footer[id] {
+    scroll-margin-top: 160px;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Animations */
