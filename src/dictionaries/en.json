@@ -30,7 +30,8 @@
     "line": "Line",
     "scale": "Scale",
     "type": "Type",
-    "features": "Product Information"
+    "features": "Product Information",
+    "keyFeatures": "Key Features"
   },
   "footer": {
     "desc": "Specializing in premium model kits and static figures. Ensuring the best quality and prices.",

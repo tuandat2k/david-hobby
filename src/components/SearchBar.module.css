@@ -20,7 +20,7 @@
   background: transparent;
   flex: 1;
   padding: 8px 0;
-  font-size: 0.875rem;
+  font-size: 1rem; /* Minimum 16px to prevent iOS auto-zoom */
   color: var(--text-primary);
   outline: none;
 }

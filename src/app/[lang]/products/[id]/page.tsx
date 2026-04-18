@@ -67,7 +67,7 @@ export default async function ProductDetail({ params }: Props) {
             </div>
             
             <div className={styles.featuresList}>
-              <h3 className={styles.featuresTitle}>{dict.productDetail.features}:</h3>
+              <h3 className={styles.featuresTitle}>{dict.productDetail.keyFeatures || dict.productDetail.features}:</h3>
               <ul className={styles.featuresUl}>
                 {product.features.map((feature: string, idx: number) => (
                   <li key={idx} className={styles.featureItem}>
