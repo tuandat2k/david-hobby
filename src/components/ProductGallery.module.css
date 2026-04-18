@@ -1,7 +1,25 @@
 .galleryContainer {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .galleryContainer {
+    gap: 10px;
+  }
+
+  .mainImageWrapper {
+    border-radius: 8px;
+  }
+
+  .thumbnailList {
+    gap: 8px;
+  }
+
+  .thumbnails {
+    gap: 8px;
+  }
 }
 
 .mainImageWrapper {
@@ -151,7 +169,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 40px;
+  padding: 20px;
 }
 
 .modalImageWrapper {
@@ -169,20 +187,47 @@
 .modalNavBtn {
   background: rgba(255, 255, 255, 0.1);
   border: none;
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: background 0.2s;
-  margin: 0 24px;
+  margin: 0 10px;
   flex-shrink: 0;
 }
 
-.modalNavBtn:hover {
-  background: rgba(255, 255, 255, 0.2);
+@media (max-width: 768px) {
+  .thumbnailWrapper {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .navBtn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .modalContent {
+    padding: 10px;
+  }
+
+  .modalNavBtn {
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    z-index: 1002;
+  }
+
+  .modalNavBtn:first-of-type {
+    left: 20px;
+  }
+
+  .modalNavBtn:last-of-type {
+    right: 20px;
+  }
 }

@@ -30,7 +30,7 @@
     "line": "Line",
     "scale": "Scale",
     "type": "Type",
-    "features": "Key Features"
+    "features": "Product Information"
   },
   "footer": {
     "desc": "Specializing in premium model kits and static figures. Ensuring the best quality and prices.",
@@ -43,5 +43,11 @@
     "title": "Search results for",
     "noResult": "No products found.",
     "back": "Go back"
+  },
+  "pagination": {
+    "prev": "Prev",
+    "next": "Next",
+    "page": "Page",
+    "of": "of"
   }
 }

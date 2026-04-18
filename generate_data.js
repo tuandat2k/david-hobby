@@ -50,7 +50,7 @@ for (let i = 1; i <= 25; i++) {
     images: [img1, img2, img3],
     inStock: Math.random() > 0.3, // 70% in stock
     shopeeLink: "https://shopee.vn/search?keyword=davidhobby",
-    fanpageLink: "https://facebook.com"
+    fanpageLink: "https://www.facebook.com/profile.php?id=61567655060469"
   });
 }
 
@@ -77,7 +77,7 @@ const originalProducts = [
     ],
     "inStock": true,
     "shopeeLink": "https://shopee.vn/",
-    "fanpageLink": "https://facebook.com"
+    "fanpageLink": "https://www.facebook.com/profile.php?id=61567655060469"
   },
   {
     "id": "p-ironman-mk85",
@@ -100,7 +100,7 @@ const originalProducts = [
     ],
     "inStock": true,
     "shopeeLink": "https://shopee.vn/",
-    "fanpageLink": "https://facebook.com"
+    "fanpageLink": "https://www.facebook.com/profile.php?id=61567655060469"
   }
 ];
 

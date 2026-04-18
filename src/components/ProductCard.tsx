@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import FallbackImage from './FallbackImage';
 import styles from './ProductCard.module.css';
 import { Locale } from '@/app/dictionaries';
 
@@ -18,7 +18,7 @@ export default function ProductCard({ id, name, price, image, category, inStock,
   return (
     <Link href={`/${lang}/products/${id}`} className={styles.card}>
       <div className={styles.imageContainer}>
-        <Image 
+        <FallbackImage 
           src={image} 
           alt={name} 
           fill 

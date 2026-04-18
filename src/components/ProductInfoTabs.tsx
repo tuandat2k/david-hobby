@@ -56,15 +56,6 @@ export default function ProductInfoTabs({ dict, product, description }: ProductI
                 </tr>
               </tbody>
             </table>
-
-            <div className={styles.features}>
-              <h4>{dict.productDetail.features}</h4>
-              <ul>
-                {product.features.map((feature: string, idx: number) => (
-                  <li key={idx}>{feature}</li>
-                ))}
-              </ul>
-            </div>
           </div>
         )}
 

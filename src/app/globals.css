@@ -22,16 +22,20 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  word-break: break-word;
 }
 
-html {
-  scroll-behavior: smooth;
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-primary);
-  font-family: var(--font-geist-sans), sans-serif;
+  font-family: var(--font-inter), sans-serif;
   line-height: 1.5;
   min-height: 100vh;
   display: flex;
@@ -56,9 +60,10 @@ main {
 
 /* Layout Utilities */
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
 }
 
 /* Animations */
@@ -152,6 +157,8 @@ main {
 
 @media (max-width: 480px) {
   .product-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 20px 0;
   }
 }

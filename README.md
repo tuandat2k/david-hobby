@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌟 David Hobby - Premium Model Figure Showcase
 
-## Getting Started
+Welcome to **David Hobby**, a professional product showcase platform dedicated to high-quality model figures, Gundam kits, and collectible action figures. Built with the latest web technologies, this platform offers a seamless experience for hobbyists to explore, search, and discover their favorite collectibles.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+-   **🌍 Multi-language Support (i18n):** Full support for Vietnamese and English, allowing users to browse in their preferred language.
+-   **🔍 Advanced Search:** Quickly find products by name or category.
+-   **📦 Dynamic Product Catalog:** Browse through various categories like Gundam, Marvel, Anime, and more.
+-   **📱 Responsive Design:** Optimized for all devices, from desktop to mobile.
+-   **⚡ High Performance:** Leverages Next.js 16 and React 19 for ultra-fast page loads and smooth transitions.
+-   **🛠️ Modular Architecture:** Clean and maintainable code using CSS Modules and a component-based structure.
+
+---
+
+## 🛠️ Tech Stack
+
+-   **Framework:** [Next.js 16 (App Router)](https://nextjs.org/)
+-   **Library:** [React 19](https://react.dev/)
+-   **Language:** [TypeScript](https://www.typescriptlang.org/)
+-   **Styling:** [CSS Modules](https://github.com/css-modules/css-modules)
+-   **Localization:** Custom i18n implementation with middleware and dynamic dictionaries.
+-   **Data:** Static JSON-based data management for high speed and simplicity.
+
+---
+
+## 📂 Project Structure
+
+```text
+david-hobby/
+├── src/
+│   ├── app/            # Next.js App Router (Routes & Layouts)
+│   │   ├── [lang]/     # Dynamic localization routes
+│   │   └── globals.css  # Global styles
+│   ├── components/     # Reusable UI components
+│   ├── dictionaries/   # i18n JSON files (en, vi)
+│   ├── data/           # Static product data (products.json)
+│   └── middleware.ts   # Localization routing logic
+├── public/             # Static assets (images, icons)
+├── generate_data.js    # Utility script for mock data generation
+└── package.json        # Project dependencies and scripts
+```
+
+---
+
+## 🏁 Getting Started
+
+### 1. Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed (v18.x or later recommended).
+
+### 2. Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/david-hobby.git
+cd david-hobby
+npm install
+```
+
+### 3. Development
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Utilities
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Data Generation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To generate fresh mock data for the product catalog, you can run:
 
-## Deploy on Vercel
+```bash
+node generate_data.js
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This script will update `src/data/products.json` with a randomized list of products across different categories.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to improve David Hobby, please feel free to fork the repository and submit a pull request.
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is private and for personal use. All rights reserved.
+
+---
+
+Created with ❤️ by **David Hobby Team**

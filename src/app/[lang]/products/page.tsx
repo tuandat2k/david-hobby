@@ -50,15 +50,15 @@ export default async function ProductsPage({
           <div className={styles.pagination}>
             {currentPage > 1 && (
               <Link href={`/${lang}/products?page=${currentPage - 1}`} className="btn btn-outline">
-                &larr; Prev
+                &larr; {dict.pagination?.prev || 'Prev'}
               </Link>
             )}
             <span className={styles.pageInfo}>
-              Page {currentPage} of {totalPages}
+              {dict.pagination?.page || 'Page'} {currentPage} {dict.pagination?.of || 'of'} {totalPages}
             </span>
             {currentPage < totalPages && (
               <Link href={`/${lang}/products?page=${currentPage + 1}`} className="btn btn-outline">
-                Next &rarr;
+                {dict.pagination?.next || 'Next'} &rarr;
               </Link>
             )}
           </div>

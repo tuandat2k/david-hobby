@@ -17,12 +17,11 @@ export default function Footer({ dict }: FooterProps) {
         <div className={styles.links}>
           <h3>{dict.footer.links}</h3>
           <a href="https://shopee.vn/davidhobby" target="_blank" rel="noopener noreferrer">{dict.footer.shopee}</a>
-          <a href="https://facebook.com/davidhobby" target="_blank" rel="noopener noreferrer">{dict.footer.facebook}</a>
+          <a href="https://www.facebook.com/profile.php?id=61567655060469" target="_blank" rel="noopener noreferrer">{dict.footer.facebook}</a>
         </div>
         <div className={styles.contact}>
           <h3>{dict.footer.contact}</h3>
-          <p>Email: contact@davidhobby.com</p>
-          <p>Phone: 0123 456 789</p>
+          <p>Hotline: 0938.697.116</p>
         </div>
       </div>
       <div className={styles.bottom}>

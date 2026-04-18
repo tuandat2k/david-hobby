@@ -100,11 +100,30 @@
 }
 
 @media (max-width: 768px) {
+  .tabsContainer {
+    margin-top: 24px;
+  }
+
+  .tabHeader {
+    padding: 12px 8px;
+    font-size: 0.95rem;
+  }
+
   .tabContent {
-    padding: 20px;
+    padding: 16px;
   }
   
+  .infoTable th, .infoTable td {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+
   .infoTable th {
-    width: 40%;
+    width: 35%;
+  }
+
+  .descTab p {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }

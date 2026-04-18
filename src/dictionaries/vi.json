@@ -30,7 +30,7 @@
     "line": "Dòng",
     "scale": "Tỷ lệ",
     "type": "Loại hình",
-    "features": "Tính năng nổi bật"
+    "features": "Thông tin sản phẩm"
   },
   "footer": {
     "desc": "Chuyên cung cấp các sản phẩm mô hình lắp ráp, figures tĩnh cao cấp. Đảm bảo chất lượng và giá tốt nhất.",
@@ -43,5 +43,11 @@
     "title": "Kết quả tìm kiếm cho",
     "noResult": "Không tìm thấy sản phẩm nào phù hợp.",
     "back": "Quay lại"
+  },
+  "pagination": {
+    "prev": "Trước",
+    "next": "Tiếp theo",
+    "page": "Trang",
+    "of": "/"
   }
 }

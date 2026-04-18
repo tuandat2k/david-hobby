@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import FallbackImage from "./FallbackImage";
 import styles from "./ProductGallery.module.css";
 
 interface ProductGalleryProps {
@@ -33,7 +33,7 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
     <div className={styles.galleryContainer}>
       {/* Main Image */}
       <div className={styles.mainImageWrapper} onClick={() => setIsModalOpen(true)}>
-        <Image
+        <FallbackImage
           src={images[currentIndex]}
           alt={`${productName} - Image ${currentIndex + 1}`}
           fill
@@ -62,7 +62,7 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
                 className={`${styles.thumbnailWrapper} ${idx === currentIndex ? styles.active : ""}`}
                 onClick={() => setCurrentIndex(idx)}
               >
-                <Image
+                <FallbackImage
                   src={img}
                   alt={`Thumbnail ${idx + 1}`}
                   fill
@@ -93,7 +93,7 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
             <button className={styles.modalNavBtn} onClick={handlePrev} aria-label="Previous image">&lt;</button>
             <div className={styles.modalImageWrapper}>
-              <Image
+              <FallbackImage
                 src={images[currentIndex]}
                 alt={`${productName} - Fullscreen`}
                 fill
