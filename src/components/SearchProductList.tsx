@@ -4,8 +4,18 @@ import { useState } from "react";
 import ProductCard from "./ProductCard";
 import { Locale } from "@/app/dictionaries";
 
+interface Product {
+  id: string;
+  name: string;
+  name_en: string;
+  price: string;
+  image: string;
+  category: string;
+  inStock: boolean;
+}
+
 interface SearchProductListProps {
-  initialProducts: Record<string, any>[];
+  initialProducts: Product[];
   lang: Locale;
   dict: Record<string, any>;
 }
