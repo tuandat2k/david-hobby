@@ -8,10 +8,43 @@ import { getDictionary, Locale } from "../../../dictionaries";
 import ProductGallery from "@/components/ProductGallery";
 import ProductInfoTabs from "@/components/ProductInfoTabs";
 import RelatedProducts from "@/components/RelatedProducts";
+import { Metadata } from "next";
+import { generateSEOMetadata } from "@/utils/seo";
 
 type Props = {
   params: Promise<{ id: string; lang: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const lang = (await params).lang as Locale;
+  const product = productsData.find((p) => p.id === id);
+
+  if (!product) {
+    return { title: 'Product Not Found' };
+  }
+
+  const name = lang === 'en' ? product.name_en : product.name;
+  const description = lang === 'en' ? product.description_en : product.description;
+
+  return generateSEOMetadata({
+    path: `/products/${id}`,
+    title: name,
+    description: description,
+    openGraph: {
+      title: `${name} | David Hobby`,
+      description: description,
+      images: [
+        {
+          url: product.image,
+          width: 800,
+          height: 800,
+          alt: name,
+        }
+      ]
+    }
+  });
+}
 
 export async function generateStaticParams() {
   const locales = ['en', 'vi'];
@@ -37,8 +70,29 @@ export default async function ProductDetail({ params }: Props) {
   const name = lang === 'en' ? product.name_en : product.name;
   const description = lang === 'en' ? product.description_en : product.description;
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: name,
+    image: `https://www.davidhobby.vn${product.image}`,
+    description: description,
+    sku: product.id,
+    offers: {
+      '@type': 'Offer',
+      url: `https://www.davidhobby.vn/${lang}/products/${product.id}`,
+      priceCurrency: 'VND',
+      price: product.price.replace(/\D/g, ''),
+      itemCondition: 'https://schema.org/NewCondition',
+      availability: product.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header lang={lang} dict={dict} />
       <main className={`container ${styles.main}`}>
         <div className={styles.breadcrumb}>

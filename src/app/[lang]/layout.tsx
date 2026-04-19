@@ -27,12 +27,7 @@ export const metadata: Metadata = {
     default: "David Hobby - Mô hình & Đồ chơi cao cấp",
   },
   description: "Khám phá bộ sưu tập mô hình và đồ chơi sở thích đa dạng tại David Hobby.",
-  alternates: {
-    languages: {
-      'vi': '/vi',
-      'en': '/en',
-    },
-  },
+
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },

@@ -4,27 +4,55 @@ import productsData from "@/data/products.json";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.davidhobby.vn'
 
-  const staticRoutes: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/vi`, lastModified: new Date(), changeFrequency: 'daily', priority: 1 },
-    { url: `${baseUrl}/en`, lastModified: new Date(), changeFrequency: 'daily', priority: 1 },
-    { url: `${baseUrl}/vi/products`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.8 },
-    { url: `${baseUrl}/en/products`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.8 },
-  ]
-
-  const productRoutes: MetadataRoute.Sitemap = productsData.flatMap((product) => [
-    {
-      url: `${baseUrl}/vi/products/${product.id}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/en/products/${product.id}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.6,
+  const getAlternates = (path: string) => ({
+    languages: {
+      'vi': `${baseUrl}/vi${path}`,
+      'en': `${baseUrl}/en${path}`,
+      'x-default': `${baseUrl}/vi${path}`,
     }
-  ])
+  });
+
+  const paths = [
+    { path: '', priority: 1 },
+    { path: '/products', priority: 0.8 }
+  ];
+
+  const staticRoutes: MetadataRoute.Sitemap = paths.flatMap(({ path, priority }) => [
+    { 
+      url: `${baseUrl}/vi${path}`, 
+      lastModified: new Date(), 
+      changeFrequency: 'daily', 
+      priority,
+      alternates: getAlternates(path)
+    },
+    { 
+      url: `${baseUrl}/en${path}`, 
+      lastModified: new Date(), 
+      changeFrequency: 'daily', 
+      priority,
+      alternates: getAlternates(path)
+    }
+  ]);
+
+  const productRoutes: MetadataRoute.Sitemap = productsData.flatMap((product) => {
+    const path = `/products/${product.id}`;
+    return [
+      {
+        url: `${baseUrl}/vi${path}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.6,
+        alternates: getAlternates(path)
+      },
+      {
+        url: `${baseUrl}/en${path}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.6,
+        alternates: getAlternates(path)
+      }
+    ];
+  });
 
   return [...staticRoutes, ...productRoutes]
 }

@@ -8,18 +8,21 @@ import Link from "next/link";
 import { getDictionary, Locale } from "../dictionaries";
 import { Metadata } from "next";
 
+import { generateSEOMetadata } from "@/utils/seo";
+
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const lang = (await params).lang as Locale;
   const dict = await getDictionary(lang);
   
-  return {
+  return generateSEOMetadata({
+    path: '',
     title: dict.header.home,
-    description: dict.home.featured, // temporary description based on dict
+    description: dict.home.featured,
     openGraph: {
       title: `${dict.header.home} | David Hobby`,
       description: dict.home.featured,
     }
-  }
+  });
 }
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const lang = (await params).lang as Locale;

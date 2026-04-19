@@ -7,18 +7,21 @@ import { getDictionary, Locale } from "../../dictionaries";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import { generateSEOMetadata } from "@/utils/seo";
+
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const lang = (await params).lang as Locale;
   const dict = await getDictionary(lang);
   
-  return {
+  return generateSEOMetadata({
+    path: '/products',
     title: dict.products.title,
     description: dict.products.subtitle,
     openGraph: {
       title: `${dict.products.title} | David Hobby`,
       description: dict.products.subtitle,
     }
-  }
+  });
 }
 export default async function ProductsPage({ 
   params, 
