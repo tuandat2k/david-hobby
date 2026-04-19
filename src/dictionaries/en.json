@@ -43,7 +43,8 @@
   "search": {
     "title": "Search results for",
     "noResult": "No products found.",
-    "back": "Go back"
+    "back": "Go back",
+    "loadMore": "Load More"
   },
   "pagination": {
     "prev": "Prev",

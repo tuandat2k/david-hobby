@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ProductCard from "@/components/ProductCard";
+import SearchProductList from "@/components/SearchProductList";
 import productsData from "@/data/products.json";
 import styles from "../products/page.module.css";
 import { getDictionary, Locale } from "../../dictionaries";
@@ -45,17 +45,11 @@ export default async function SearchPage({
         </div>
         
         {filteredProducts.length > 0 ? (
-          <div className="product-grid">
-            {filteredProducts.map((product) => (
-              <ProductCard 
-                key={product.id} 
-                {...product} 
-                name={lang === 'en' ? product.name_en : product.name}
-                lang={lang} 
-                dict={dict} 
-              />
-            ))}
-          </div>
+          <SearchProductList 
+            initialProducts={filteredProducts} 
+            lang={lang} 
+            dict={dict} 
+          />
         ) : (
           <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-secondary)' }}>
             <p>{dict.search.noResult}</p>

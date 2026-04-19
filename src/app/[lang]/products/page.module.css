@@ -94,3 +94,48 @@
   color: var(--text-secondary);
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 32px;
+  }
+  
+  .pageBtn {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 8px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+  }
+  
+  .ellipsis {
+    min-width: 32px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    gap: 4px;
+  }
+  
+  .pageBtn {
+    min-width: 32px;
+    height: 32px;
+    padding: 0 6px;
+    font-size: 0.85rem;
+  }
+  
+  .ellipsis {
+    min-width: 24px;
+    height: 32px;
+  }
+  
+  /* Ẩn bớt nút First/Last trên màn hình quá bé để tiết kiệm diện tích */
+  .pageBtn[aria-label="First Page"],
+  .pageBtn[aria-label="Last Page"] {
+    display: none;
+  }
+}

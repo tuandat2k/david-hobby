@@ -43,7 +43,8 @@
   "search": {
     "title": "Kết quả tìm kiếm cho",
     "noResult": "Không tìm thấy sản phẩm nào phù hợp.",
-    "back": "Quay lại"
+    "back": "Quay lại",
+    "loadMore": "Tải thêm"
   },
   "pagination": {
     "prev": "Trước",

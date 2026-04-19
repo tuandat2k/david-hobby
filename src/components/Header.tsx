@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Header.module.css';
@@ -15,7 +15,7 @@ interface HeaderProps {
 export default function Header({ lang, dict }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const lastScrollY = useRef(0);
   const pathname = usePathname();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -40,9 +40,17 @@ export default function Header({ lang, dict }: HeaderProps) {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
+      // Prevent iOS rubber-band overscroll bug
+      if (
+        currentScrollY < 0 || 
+        currentScrollY > document.documentElement.scrollHeight - window.innerHeight
+      ) {
+        return;
+      }
+      
       if (currentScrollY < 50) {
         setIsVisible(true);
-      } else if (currentScrollY > lastScrollY) {
+      } else if (currentScrollY > lastScrollY.current) {
         // Scroll down: Hide header
         setIsVisible(false);
       } else {
@@ -50,12 +58,12 @@ export default function Header({ lang, dict }: HeaderProps) {
         setIsVisible(true);
       }
       
-      setLastScrollY(currentScrollY);
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <header className={`${styles.header} ${isVisible ? '' : styles.headerHidden}`}>
