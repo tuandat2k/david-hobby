@@ -29,7 +29,7 @@ export default async function ProductsPage({
   searchParams 
 }: { 
   params: Promise<{ lang: string }>;
-  searchParams: Promise<{ page?: string }>;
+  searchParams: Promise<{ page?: string; sort?: string }>;
 }) {
   const lang = (await params).lang as Locale;
   const dict = await getDictionary(lang);
