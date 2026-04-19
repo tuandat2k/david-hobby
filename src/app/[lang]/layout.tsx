@@ -21,8 +21,18 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "David Hobby - Mô hình & Đồ chơi cao cấp",
+  metadataBase: new URL("https://www.davidhobby.vn"),
+  title: {
+    template: "%s | David Hobby",
+    default: "David Hobby - Mô hình & Đồ chơi cao cấp",
+  },
   description: "Khám phá bộ sưu tập mô hình và đồ chơi sở thích đa dạng tại David Hobby.",
+  alternates: {
+    languages: {
+      'vi': '/vi',
+      'en': '/en',
+    },
+  },
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -36,11 +46,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "David Hobby - Mô hình & Đồ chơi cao cấp",
     description: "Khám phá bộ sưu tập mô hình và đồ chơi sở thích đa dạng tại David Hobby.",
-    url: "https://davidhobby.com",
+    url: "https://www.davidhobby.vn",
     siteName: "David Hobby",
     images: [
       {
-        url: "/images/banner-temp.png", // Ảnh sẽ hiện ra khi bạn gửi link
+        url: "/images/hero-banner-mech-collection.png",
         width: 1200,
         height: 630,
         alt: "David Hobby Banner",
@@ -48,6 +58,12 @@ export const metadata: Metadata = {
     ],
     locale: "vi_VN",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "David Hobby - Mô hình & Đồ chơi cao cấp",
+    description: "Khám phá bộ sưu tập mô hình và đồ chơi sở thích đa dạng tại David Hobby.",
+    images: ["/images/hero-banner-mech-collection.png"],
   },
 };
 

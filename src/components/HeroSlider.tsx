@@ -11,9 +11,10 @@ interface HeroSliderProps {
 }
 
 const images = [
-  '/images/banner-temp.png',
-  '/images/banner-2.png',
-  '/images/banner-3.png'
+  '/images/hero-banner-gundam-showcase.png',
+  '/images/hero-banner-mech-collection.png',
+  '/images/hero-banner-action-figures.png',
+  '/images/hero-banner-optimus-goku-rx782.png'
 ];
 
 export default function HeroSlider({ lang, dict }: HeroSliderProps) {
