@@ -9,6 +9,7 @@
   gap: 8px;
   font-size: 0.875rem;
   color: var(--text-secondary);
+  margin-top: 24px;
   margin-bottom: 24px;
 }
 
@@ -51,12 +52,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   margin-top: 40px;
 }
 
-.pageInfo {
-  font-size: 1rem;
+.pageBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
   font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--card-bg);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.pageBtn:hover {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.pageBtn.active {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+  font-weight: 700;
+}
+
+.ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
   color: var(--text-secondary);
+  font-weight: 500;
 }

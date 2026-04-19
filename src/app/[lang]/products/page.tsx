@@ -4,6 +4,7 @@ import ProductCard from "@/components/ProductCard";
 import productsData from "@/data/products.json";
 import styles from "./page.module.css";
 import { getDictionary, Locale } from "../../dictionaries";
+import SortSelect from "@/components/SortSelect";
 import Link from "next/link";
 import { Metadata } from "next";
 
@@ -33,17 +34,54 @@ export default async function ProductsPage({
   const lang = (await params).lang as Locale;
   const dict = await getDictionary(lang);
   
-  const { page } = await searchParams;
+  const { page, sort } = await searchParams;
   const currentPage = parseInt(page || '1', 10);
   const itemsPerPage = 20;
-  const totalPages = Math.ceil(productsData.length / itemsPerPage);
+
+  let sortedProducts = [...productsData];
+  if (sort === 'name_asc') {
+    sortedProducts.sort((a, b) => a.name.localeCompare(b.name, 'vi'));
+  } else if (sort === 'name_desc') {
+    sortedProducts.sort((a, b) => b.name.localeCompare(a.name, 'vi'));
+  } else if (sort === 'price_asc') {
+    sortedProducts.sort((a, b) => parseInt(a.price.replace(/\D/g, '') || '0') - parseInt(b.price.replace(/\D/g, '') || '0'));
+  } else if (sort === 'price_desc') {
+    sortedProducts.sort((a, b) => parseInt(b.price.replace(/\D/g, '') || '0') - parseInt(a.price.replace(/\D/g, '') || '0'));
+  } else if (sort === 'newest') {
+    sortedProducts.reverse();
+  }
+
+  const totalPages = Math.ceil(sortedProducts.length / itemsPerPage);
   
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentProducts = productsData.slice(startIndex, endIndex);
+  const currentProducts = sortedProducts.slice(startIndex, endIndex);
+
+  const buildPaginationUrl = (pageNum: number) => {
+    const params = new URLSearchParams();
+    if (pageNum > 1) params.set('page', pageNum.toString());
+    if (sort) params.set('sort', sort);
+    const qs = params.toString();
+    return `/${lang}/products${qs ? `?${qs}` : ''}#product-list`;
+  };
+
+  const getPageNumbers = (current: number, total: number) => {
+    if (total <= 7) return Array.from({length: total}, (_, i) => i + 1);
+    if (current <= 4) return [1, 2, 3, 4, 5, '...', total];
+    if (current >= total - 3) return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
+    return [1, '...', current - 1, current, current + 1, '...', total];
+  };
+
+  const pageNumbers = getPageNumbers(currentPage, totalPages);
 
   return (
     <>
+      {currentPage > 1 && (
+        <link rel="prev" href={buildPaginationUrl(currentPage - 1)} />
+      )}
+      {currentPage < totalPages && (
+        <link rel="next" href={buildPaginationUrl(currentPage + 1)} />
+      )}
       <Header lang={lang} dict={dict} />
       <main className={`container ${styles.main}`}>
         <div className={styles.breadcrumb}>
@@ -56,8 +94,10 @@ export default async function ProductsPage({
           <h1 className={styles.title}>{dict.products.title}</h1>
           <p className={styles.subtitle}>{dict.products.subtitle}</p>
         </div>
-        
-        <div className="product-grid">
+        <div id="product-list">
+          <SortSelect dict={dict} />
+          
+          <div key={`${currentPage}-${sort || 'default'}`} className="product-grid animate-fade-in">
           {currentProducts.map((product) => (
             <ProductCard 
               key={product.id} 
@@ -71,21 +111,69 @@ export default async function ProductsPage({
 
         {totalPages > 1 && (
           <div className={styles.pagination}>
+            {/* << First Page */}
             {currentPage > 1 && (
-              <Link href={`/${lang}/products?page=${currentPage - 1}`} className="btn btn-outline">
-                &larr; {dict.pagination?.prev || 'Prev'}
+              <Link 
+                href={buildPaginationUrl(1)} 
+                className={styles.pageBtn}
+                aria-label="First Page"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m11 17-5-5 5-5"/><path d="m18 17-5-5 5-5"/></svg>
               </Link>
             )}
-            <span className={styles.pageInfo}>
-              {dict.pagination?.page || 'Page'} {currentPage} {dict.pagination?.of || 'of'} {totalPages}
-            </span>
+
+            {/* < Prev Page */}
+            {currentPage > 1 && (
+              <Link 
+                href={buildPaginationUrl(currentPage - 1)} 
+                className={styles.pageBtn} 
+                aria-label={dict.pagination?.prev || 'Prev'}
+                rel="prev"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+              </Link>
+            )}
+
+            {/* Smart Range Numbers */}
+            {pageNumbers.map((num, i) => {
+              if (num === '...') {
+                return <span key={`ellipsis-${i}`} className={styles.ellipsis}>&hellip;</span>;
+              }
+              if (num === currentPage) {
+                return <span key={`page-${num}`} className={`${styles.pageBtn} ${styles.active}`}>{num}</span>;
+              }
+              return (
+                <Link key={`page-${num}`} href={buildPaginationUrl(num as number)} className={styles.pageBtn}>
+                  {num}
+                </Link>
+              );
+            })}
+
+            {/* > Next Page */}
             {currentPage < totalPages && (
-              <Link href={`/${lang}/products?page=${currentPage + 1}`} className="btn btn-outline">
-                {dict.pagination?.next || 'Next'} &rarr;
+              <Link 
+                href={buildPaginationUrl(currentPage + 1)} 
+                className={styles.pageBtn} 
+                aria-label={dict.pagination?.next || 'Next'}
+                rel="next"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </Link>
+            )}
+
+            {/* >> Last Page */}
+            {currentPage < totalPages && (
+              <Link 
+                href={buildPaginationUrl(totalPages)} 
+                className={styles.pageBtn}
+                aria-label="Last Page"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
               </Link>
             )}
           </div>
         )}
+        </div>
       </main>
       <Footer dict={dict} />
     </>

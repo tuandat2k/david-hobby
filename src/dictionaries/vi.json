@@ -50,5 +50,14 @@
     "next": "Tiếp theo",
     "page": "Trang",
     "of": "/"
+  },
+  "sort": {
+    "label": "Sắp xếp theo:",
+    "default": "Mặc định",
+    "name_asc": "Tên A → Z",
+    "name_desc": "Tên Z → A",
+    "price_asc": "Giá tăng dần",
+    "price_desc": "Giá giảm dần",
+    "newest": "Mới nhất"
   }
 }

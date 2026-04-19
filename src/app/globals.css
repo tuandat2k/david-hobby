@@ -25,6 +25,10 @@
   word-break: break-word;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   overflow-x: hidden;
   position: relative;
@@ -73,12 +77,12 @@ main {
 }
 
 /* Layout Utilities */
-section[id], footer[id] {
+[id] {
   scroll-margin-top: 100px;
 }
 
 @media screen and (max-width: 768px) {
-  section[id], footer[id] {
+  [id] {
     scroll-margin-top: 160px;
   }
 }

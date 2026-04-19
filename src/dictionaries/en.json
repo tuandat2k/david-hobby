@@ -50,5 +50,14 @@
     "next": "Next",
     "page": "Page",
     "of": "of"
+  },
+  "sort": {
+    "label": "Sort by:",
+    "default": "Default",
+    "name_asc": "Name A → Z",
+    "name_desc": "Name Z → A",
+    "price_asc": "Price Ascending",
+    "price_desc": "Price Descending",
+    "newest": "Newest"
   }
 }

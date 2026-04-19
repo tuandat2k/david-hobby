@@ -14,13 +14,17 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const lang = (await params).lang as Locale;
   const dict = await getDictionary(lang);
   
+  const seoTitle = lang === 'vi' 
+    ? 'David Hobby - Mô hình đẹp và giá rẻ' 
+    : 'David Hobby - Premium Models & Toys';
+
   return generateSEOMetadata({
     path: '',
-    title: dict.header.home,
-    description: dict.home.featured,
+    title: seoTitle,
+    description: dict.home.subtitle,
     openGraph: {
-      title: `${dict.header.home} | David Hobby`,
-      description: dict.home.featured,
+      title: seoTitle,
+      description: dict.home.subtitle,
     }
   });
 }
