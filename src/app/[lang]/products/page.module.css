@@ -72,10 +72,21 @@
   text-decoration: none;
 }
 
-.pageBtn:hover {
+/* Chỉ apply hover trên thiết bị có chuột thực sự (không bị stuck trên mobile) */
+@media (hover: hover) and (pointer: fine) {
+  .pageBtn:hover {
+    background-color: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+}
+
+/* Feedback khi tap trên touch device */
+.pageBtn:active {
   background-color: var(--accent);
   color: white;
   border-color: var(--accent);
+  opacity: 0.85;
 }
 
 .pageBtn.active {
