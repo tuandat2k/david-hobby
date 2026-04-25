@@ -42,6 +42,10 @@
   color: var(--text-secondary);
 }
 
+.hotlineText {
+  white-space: nowrap;
+}
+
 .hotlineLink {
   color: inherit;
   font-weight: 700;

@@ -27,7 +27,7 @@ export default function Footer({ dict }: FooterProps) {
         </div>
         <div className={styles.contact}>
           <h3>{dict.footer.contact}</h3>
-          <p>Hotline: <a href="tel:0938697116" className={styles.hotlineLink}>0938.697.116</a></p>
+          <p className={styles.hotlineText}>Hotline: <a href="tel:0355264301" className={styles.hotlineLink}>0355 264 301</a> (David Pham)</p>
         </div>
       </div>
       <div className={styles.bottom}>
